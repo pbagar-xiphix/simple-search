@@ -1,0 +1,24 @@
+<dom-module id="simple-search-styles">
+    <template>
+        <style>
+            .trigger-search, .trigger-close, .input-area {
+                display: none;
+            }
+            .opened .trigger-search, .opened .trigger-close, .opened .input-area {
+                display: block;
+            }
+            .opened .trigger-open {
+                display: none;
+            }
+            .flex-horizontal {
+                @apply(--layout-horizontal);
+            }
+            .flexchild {
+                @apply(--layout-flex);
+            }
+            div, .trigger-search {
+                color: var(--search-primary-color, #303f9f);
+            }
+        </style>
+    </template>
+</dom-module>
